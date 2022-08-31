@@ -1,0 +1,16 @@
+server:
+  port: 8086
+  
+spring:          
+  application:
+    name:  rest-service
+  
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 1
+     leaseExpirationDurationInSeconds:  3
+     hostname:
+      localhost
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8088/eureka

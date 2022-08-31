@@ -1,0 +1,15 @@
+server:
+  port: 8088
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetch-registry: false
+    service-url:
+      defaultUrl: http://{eurake.instance.hostname}:${server.port}/eureka
+
+spring:
+  application:
+    name: eureka-server
