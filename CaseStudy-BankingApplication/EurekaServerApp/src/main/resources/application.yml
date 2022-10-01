@@ -1,0 +1,12 @@
+server:
+  port: 8085
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetch-registry: false
+    service-url:
+      defaultUrl: http://{eurake.instance.hostname}:${server.port}/eureka
+

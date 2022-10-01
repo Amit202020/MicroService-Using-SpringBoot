@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  
+spring:   
+  application:
+    name:  acc-service
+  
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 1
+     leaseExpirationDurationInSeconds:  3
+
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8085/eureka
+      
+     
