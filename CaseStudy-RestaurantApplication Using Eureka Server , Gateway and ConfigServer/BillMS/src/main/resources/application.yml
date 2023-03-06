@@ -1,0 +1,14 @@
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 1
+     leaseExpirationDurationInSeconds:  3
+     hostname:
+      localhost
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8087/eureka
+    
+spring:
+  application:
+    name: bill-service
+    

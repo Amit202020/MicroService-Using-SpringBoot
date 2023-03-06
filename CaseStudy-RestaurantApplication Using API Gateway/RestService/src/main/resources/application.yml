@@ -1,23 +1,0 @@
-server:
-  port: 8099
-    
-eureka:
-  client:
-    register-with-eureka: true
-    
-    fetch-registry: true
-    
-    service-url:      defaultZone:  http://localhost:8087/eureka
-      
-spring:
-  application:
-    name: rest-service
-  datasource:    url: jdbc:h2:mem:amit
-  h2:
-    console:      enabled: true
-  sql:    init:      platform: h2  
-    
-    
-    
-      
-  
